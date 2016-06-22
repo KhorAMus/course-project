@@ -1,0 +1,14 @@
+H1 {
+  color: #000080;
+  font-size: 200%;
+  font-family: Arial, Verdana, sans-serif;
+  text-align: center;
+}
+P {
+  padding-left: 20px;
+  font-weight: bold; 
+}
+body{
+  margin: 0;
+  background: url(../BackGrounds/BG1.jpg);
+}

@@ -1,0 +1,22 @@
+<div class="menu" style="text-align: center;">
+  <header >
+    <nav>
+      <div class="logo-box">
+        <h1 class="logo">
+          <a href="/">
+            <img src= "{{request.static_url('myproject:static/Logos/Logo.png')}}" width="120" height="120">
+          </a>
+        </h1>
+      </div>
+      <div id="Items"> 
+        <ul >
+          <li><a href="{{request.application_url}}">home</a></li>
+          <li><a href="#">work</a></li>
+          <li><a href="#">hola {{login}}</a></li>
+          <li><a href="#">hello {{project}}</a></li>
+          <li><a href="{{request.application_url}}/logout">Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+</div>

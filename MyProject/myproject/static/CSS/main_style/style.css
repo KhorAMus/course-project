@@ -1,0 +1,153 @@
+H1 {
+  color: #000080;
+  font-size: 200%;
+  font-family: Arial, Verdana, sans-serif;
+  text-align: center;
+}
+P {
+  padding-left: 20px;
+  font-weight: bold; 
+}
+
+dialog::backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+body{
+  margin: 0;
+  background: url(../../BackGrounds/BG1.jpg);
+}
+
+#chat{
+  width: 28%;
+  text-align: center;
+  border: 3px solid black;
+  background: rgba(255,255,255,0.5);
+  float: right;
+}
+
+#lobby_place{
+  float: left;
+  width: 60%;
+  display: inline-block;
+  background: rgba(123,52,111,0.5);
+}
+
+#lobbys_id{
+  float: left;
+  width: 100%;
+  height: 500px;
+  overflow-y: auto;
+  line-height:normal;
+  background: url(../../Textures/2.png);
+  background-size: 25% 100%;
+  background-repeat-x: no-repeat;
+  background-position-x: 50%;
+}
+
+#lobbys_id li{
+  display: block;
+  font-size: 20pt;
+  border-bottom: 20px solid rgba(0,0,0,0.0);
+
+}
+
+.LBItemBG{
+  //background: url(../../Textures/Seamless/gray-canvas-fabric-texture.jpg);
+  background: url(../../Textures/1.png);
+  background-repeat: repeat-y;
+  transform: rotate(0deg);
+  background-size:100% 60%;
+  border-radius: 5px; 
+  overflow: hidden; 
+}
+
+.LBItemName{
+  display: block;
+  background: rgba(0,0,0, 0.3);
+}
+
+.LBItem{
+  margin-left: 0;
+}
+.LBItem:hover{
+  background: rgba(0, 0, 0, 0.0);
+}
+
+.LBItemMiddle{
+  display: inline-block;
+}
+
+.LBItemBottom{
+  clear: both; 
+  background: rgba(0,0,0, 0.3);
+}
+
+.LBItemMiddleMapPreview{
+  float: left;  
+  margin-right: 20px;
+  border-radius: 10px; 
+  box-shadow: 0px 0px 20px rgba(0,0,0,1.0);
+  overflow: hidden;
+}
+
+.LBItemMiddleLobbyStatys{
+  float: left;
+}
+.LBItemMiddleLobbyStatysPlayer{
+   display: block; 
+   background: rgba(255,255,255, 0.3); 
+   border-radius: 5px;
+}
+
+.left_part{
+  width:2%;
+  float:left;
+}
+
+.right_part{
+  width:2%;
+  float:right;
+}
+
+.middle_part{
+  background: rgba(0,0,100,0.3);
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+  width:96%;
+  float:left;
+}
+
+.bottom_part{
+  clear: both;
+  text-align: center;
+  background: rgba(200,0,0,0.8);
+}
+
+
+
+#send_button{
+  clear: both;
+  background: #008B00;
+}
+#send_button:hover{
+  background: #00CD00;
+}
+
+
+.chat_messages{
+  float: none;
+  height: auto;
+  margin: 0;
+  line-height: normal;
+}
+
+.chat_message{
+  display: block;
+  margin-left: auto;
+}
+

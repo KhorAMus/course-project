@@ -1,0 +1,193 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Main Page</title>
+  <script type="text/javascript" ></script>
+  <title>Icon</title>
+  <link rel="icon" href="{{request.static_url('myproject:static/Icons/favicon_16x16.ico')}}" type="image/x-icon">
+  <title>Стили</title>
+  <link rel="stylesheet" href="{{request.static_url('myproject:static/CSS/main_style/lobby_form_style.css')}}">
+  <link rel="stylesheet" href="{{request.static_url('myproject:static/CSS/main_style/style.css')}}">
+  <link rel="stylesheet" href="{{request.static_url('myproject:static/CSS/menu_style.css')}}">
+  <script type="text/javascript" src= "{{request.static_url('myproject:static/js3/Socket Module.js')}}"></script>
+
+
+</head>
+
+<body id="body" >
+
+
+
+
+
+  <div style="text-align: center;">
+    <header class="menu">
+      <nav>
+        <div class="logo-box">
+          <h1 class="logo">
+            <a href="/">
+              <img src= "{{request.static_url('myproject:static/Logos/Logo.png')}}" width="120" height="120">
+            </a>
+          </h1>
+        </div>
+        <div id="Items"> 
+          <ul >
+            <li><a href="{{request.application_url}}">home</a></li>
+            <li><a href="#">work</a></li>
+            <li ><a id="login" href="#">{{login}}</a></li>
+            <li><a href="#">hello {{project}}</a></li>
+            <li><a href="{{request.application_url}}/logout">Logout</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <div class="left_part" >left path</div>
+  <div class="middle_part" >
+  <button id = "stop_music"> Stop music </button>
+  <button id = "send_json"> s j </button>
+
+    <div id="lobby_place">
+      <ul class="lobbys" id="lobbys_id" style="width: 50%">
+        <!--<li class="LBItem">
+          <div class = "LBItemBG">
+            <div class = "LBItemTop"><label class="LBItemName" >LB Name</label></div>
+            <div class = "LBItemMiddle" >
+              <div class = "LBItemMiddleMapPreview" ><image src="{{request.static_url('myproject:static/Textures/perekatipole.jpg')}}" width="128" height="128" ></div>
+              <div class = "LBItemMiddleLobbyStatys">
+                <label class="LBItemMiddleLobbyStatysPlayer" >Player1</label>
+                <image src="{{request.static_url('myproject:static/Textures/duel.png')}}" width="64" height="64"  >
+                  <label class="LBItemMiddleLobbyStatysPlayer" >Player2</label>
+                </div>
+              </div>
+              <div class = "LBItemBottom" >
+                <form action="test"> <input type="submit" value="Join"></form>
+              </div>
+            </div>
+          </li> -->
+        </ul>
+
+
+
+
+
+          <dialog id = "lobby_form">
+          <!-- <div>
+            <div id = "lobby_form_name_place">
+            <label id = "lobby_form_name">Имя лобби</label>
+            </div>
+            <div id = "lobby_form_status_place">
+            <label id = "lobby_form_status">lobby status: Waiting</label>
+            </div>
+            <div id = "lobby_form_teams_place">
+              <ul id = "lobby_form_team1_list">
+                <li id = "lobby_form_team1_name">team1</li>
+                <li class="lobby_form_team1_slot">bfg</li>
+              </ul>
+              <ul id = "lobby_form_team2_list">
+                <li id = "lobby_form_team2_name">team2</li>
+                <li class="lobby_form_team2_slot">jkl</li>
+              </ul>  
+            </div>
+            <div id = "lobby_form_clients_place">
+              <ul id = "lobby_form_clients_list">
+                <li id = "lobby_form_clients_name">clients</li>
+                <li class="lobby_form_client_slot">client</li>
+              </ul> 
+            </div>
+
+            <div id = "lobby_form_bottom_place">
+              <button id="close_lobby_form">Закрыть</button>
+            </div>
+          </div> -->
+          </dialog>
+        <div >
+          <button id="show_lobby_form">lobby preview</button>
+        </div>
+
+
+
+        <div style="text-align: center;">
+          <dialog id = "create_lobby_form">
+            <p>Имя лобби</p>
+            <br> <input type="text" name="firstname" id="name_return_value" value="" placeholder="lobby13"><br>
+            <p>Пароль</p>
+            <br> <input type="text" name="firstname" id="password_return_value" value="" placeholder="password"><br>
+            <button id="close_lb">Закрыть</button>
+            <button id="submit_lb">Создать</button>
+          </dialog>
+          <button id="show">Создать лобби</button>
+          <script type="text/javascript" src= "{{request.static_url('myproject:static/js3/lobby_button.js')}}"></script>
+        </div>
+
+
+
+
+
+
+
+
+              --
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        
+          <div class="panel-group">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" href="#collapse1">Collapsible panel</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse">
+        <div class="panel-body">Panel Body</div>
+        <div class="panel-footer">Panel Footer</div>
+      </div>
+    </div>
+  </div>
+        --
+
+
+
+
+
+
+
+      </div>
+
+      <div id="chat">
+        <ul class="chat_messages">
+          <li class="chat_message"> <img src="{{request.static_url('myproject:static/Logos/Logo.png')}}" width="32" height="32" style="float: left;"> <div style="float: left;">Сообщение 1</div></li>
+        </ul>
+        <div style="clear: both;"> 
+          <button id="send_button" style="border:none; "> 
+            <span style="color: #FFFFFF">Чат</span> 
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="right_part" >Right path</div>
+    <div class="bottom_part" >Bottom path</div>
+
+
+
+
+
+  </body>
+  <script type="text/javascript"> 
+    var randomColor = Math.floor(Math.random()*16777215).toString(16); 
+  </script>
+
+  </html>

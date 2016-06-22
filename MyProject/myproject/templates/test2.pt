@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>???????	</title>
+  <script type="text/javascript" src= "${request.static_url('myproject:static/js3/jquery.js')}"></script>
+  <script type="text/javascript" src= "${request.static_url('myproject:static/js3/jquery.keyboard.js')}"></script>
+  
+  <script type="text/javascript" src= "${request.static_url('myproject:static/js3/Vector2.js')}"></script>
+  <script type="text/javascript" src= "${request.static_url('myproject:static/js3/Color.js')}"></script>
+  <script type="text/javascript" src= "${request.static_url('myproject:static/js3/Ray.js')}"></script>
+  
+  <script type="text/javascript" src= "${request.static_url('myproject:static/js3/Motion.js')}"></script>
+  <script type="text/javascript" src= "${request.static_url('myproject:static/js3/Ship.js')}"></script>
+  <script type="text/javascript" src= "${request.static_url('myproject:static/js3/Renderer.js')}"></script>
+  <script type="text/javascript" src= "${request.static_url('myproject:static/js3/game.js')}"></script>
+  <script type="text/javascript" src= "${request.static_url('myproject:static/js3/GL.js')}"></script>
+  <script type="text/javascript" src= "${request.static_url('myproject:static/js3/Socket Module.js')}"></script>
+  <title>Icon</title>
+  <link rel="icon" href="${request.static_url('myproject:static/Icons/favicon_16x16.ico')}" type="image/x-icon">
+  <title>Стили</title>
+  <link rel="stylesheet" href="${request.static_url('myproject:static/CSS/style.css')}">
+  <link rel="stylesheet" href="${request.static_url('myproject:static/CSS/menu_style.css')}">
+</head>
+
+<body >
+  <div style="display:block;width:100%;">
+
+    <header class="menu">
+      <nav>
+        <div class="logo-box">
+          <h1 class="logo">
+            <a href="/">
+              <img src= "${request.static_url('myproject:static/Logos/Logo.png')}" width="120" height="120">
+            </a>
+          </h1>
+        </div>
+        <div id="Items"> 
+          <ul >
+            <li><a href="#">home</a></li>
+            <li><a href="#">work</a></li>
+            <li><a href="#">product</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  </div>
+
+  <div class="left_part" >left path</div>
+  <div class="middle_part" >
+    <canvas id="game" height='500px' width='500px'></canvas>
+    <canvas id="game2" height='300px' width='300px'></canvas>
+    <canvas id="glgame" height='700px' width='700px'></canvas>
+    <div id="chat">
+      <ul class="chat_messages">
+        <li class="chat_message"> <img src="${request.static_url('myproject:static/Logos/Logo.png')}" width="32" height="32" style="float: left;"> <div style="float: left;">Сообщение 1</div></li>
+      </ul>
+      <div style="clear: both;"> 
+      <button id="send_button" style="border:none; "> 
+          <span style="color: #FFFFFF">Чат</span> 
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="right_part" >Right path</div>
+  <div class="bottom_part" >Bottom path</div>
+
+</body>
+</html>

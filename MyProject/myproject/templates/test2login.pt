@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>???????	</title>
+  <link rel="stylesheet" href="${request.static_url('myproject:static/CSS/login_style/style.css')}">
+
+
+</head>
+
+<body >
+
+  <div class = "authentication">
+    <section class="loginform cf">
+      <form name="login" action="index_submit" method="get" accept-charset="utf-8">
+        <ul>
+         <li><label for="usermail">Email</label>
+          <input type="email" name="usermail" placeholder="yourname@email.com" required></li>
+          <li><label for="password">Password</label>
+           <input type="password" name="password" placeholder="password" required></li>
+           <div> 
+             <input type="submit" value="Login">
+             <input type="submit" value="Sign Up">
+           </div>
+         </ul>
+       </form>
+     </section>
+   </div>
+ </body>
+ </html>

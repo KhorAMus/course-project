@@ -1,0 +1,71 @@
+.menu_list{
+  list-style-type: none; 
+  display: inline-block; 
+  padding: 0px; 
+  margin: auto; 
+  background: url(../../Textures/Stolb.png); 
+  background-size: cover; 
+  text-align: center;
+  width: 360px;
+  height: 520px;
+  overflow: hidden;
+}
+.menu_panel{
+  perspective: 2900px;
+  perspective-origin: top;
+  display: inline-block;
+  position: absolute;
+}
+.menu_panel_shadow{
+  z-index: -1;
+  opacity: 0.3;
+  transform: translateY(212px) translateX(32px) rotateX(89deg) skew(-7deg) rotateY(0deg);
+}
+
+/* Эффекты при наведении на объекты меню*/
+.menu_panel a{
+  background-size: contain;
+  border-radius: 2px;
+  color: white;
+  font-size: x-large;
+  font-variant: small-caps;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  text-decoration: none;
+}
+.menu_panel a::before,
+.menu_panel a::after {
+  display: inline-block;
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+  transition: transform 0.3s, opacity 0.2s;
+}
+
+.menu_panel a::before {
+  margin-right: 10px;
+  content: '✯';
+  -webkit-transform: translateX(20px);
+  -moz-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+.menu_panel a::after {
+  margin-left: 10px;
+  content: '✯';
+  -webkit-transform: translateX(-20px);
+  -moz-transform: translateX(-20px);
+  transform: translateX(-20px);
+}
+
+.menu_panel a:hover::before,
+.menu_panel a:hover::after,
+.menu_panel a:focus::before,
+.menu_panel a:focus::after {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  transform: translateX(0px);
+}
+/**/
+

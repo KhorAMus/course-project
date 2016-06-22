@@ -1,0 +1,291 @@
+
+#body{
+  background: url(../../Textures/desert.png);
+  background-repeat: repeat-y;
+  background-size:100% auto;
+  overflow: hidden;
+  background-position: center top;
+}
+
+
+.panel{
+  margin-bottom: 0px;
+}
+
+
+#create_lobby_form{
+  border-radius: 30px;
+  border: none;
+  background: rgba(255,255,255,0.9);
+}
+#create_lobby_form::backdrop {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+
+.rooms{
+  list-style-type: none;
+  padding: 0px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  //background: rgba(255,255,255,0.2);
+  margin: 0px;
+  z-index: 100;
+
+}
+
+
+.panel-title{
+}
+
+
+
+
+.lobby_form{
+  height: inherit;
+  background-size: 100% 100%;
+  text-align: center;
+}
+
+#rooms_panel{
+
+}
+
+
+#lobby_form_status_place{
+  
+}
+
+#lobby_form_status{
+  
+}
+
+#lobby_form_teams_place{
+      display: inline-flex;
+      width: 100%;
+}
+
+#lobby_form_team1_list{
+  border-radius: 8px;
+  line-height: normal;
+  height: auto;
+  margin-left: initial;
+  margin: 10px;
+  width: 100%;
+  background: #ffba52;
+  padding-left: 0;
+
+}
+
+#lobby_form_team2_list{
+  border-radius: 8px;
+  line-height: normal;
+  height: auto;
+  margin-left: initial;
+  margin: 10px;
+  width: 100%;
+  background: #3e71a6;
+  padding-left: 0;
+}
+
+#lobby_form_clients_list{
+  border-radius: 8px;
+  line-height: normal;
+  clear: both;
+  height: auto;
+  margin-left: initial;
+  margin: 10px;
+  width: 100%;
+  background: rgba(255,255,255,0.7);
+  padding-left: 0;
+  list-style-type: none;
+}
+
+#lobby_form_team1_name{
+  margin-right: auto;
+  display: block;
+  margin-left: auto; 
+      padding-bottom: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(255,255,255,0.7);
+    border-bottom-width: 2px;
+    color: white;
+    font-weight: bold;
+
+}
+
+
+#lobby_form_team2_name{
+  margin-right: auto;
+  display: block;
+  margin-left: auto; 
+      padding-bottom: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(255,255,255,0.7);
+    border-bottom-width: 2px;
+    color: white;
+    font-weight: bold;
+
+}
+
+
+
+#lobby_form_clients_name{
+  margin-right: auto;
+  display: block;
+  margin-left: auto; 
+      font-weight: bold;
+}
+
+#lobby_form_clients_place{
+  display: flex;
+}
+
+
+.lobby_form_clients_slot{
+  display: block;
+  margin-left: auto; 
+  margin-right: auto;
+  display: block;
+  width: 90%;
+  padding-bottom: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(0,0,0,0.15);
+    border-bottom-width: 2px;
+}
+
+
+.lobby_form_team1_slot{
+  width: 80%;
+  display: block;
+  margin-left: auto; 
+  margin-right: auto;
+  display: block;
+      color: white;
+}
+
+.lobby_form_team2_slot{
+  width: 80%;
+  display: block;
+  margin-left: auto; 
+  margin-right: auto;
+  display: block;
+      color: white;
+}
+
+.panel{
+  background-color: rgba(255,255,255,0.75 );
+  border-radius: 0px;
+}
+.panel-default>.panel-heading{
+  background-color: #ffffff;
+}
+
+
+img.bg {
+  min-height: 100%;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.blur {
+  z-index: -1;
+  position: relative;
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: url(#blur);
+  filter: progid: DXImageTransform.Microsoft.Blur(PixelRadius='10');
+  overflow: hidden;
+}
+
+.blur:after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, .2);
+  position: absolute;
+}
+
+
+
+/* Tamaya */
+.button--tamaya {
+  overflow: hidden;
+  height: 40px; 
+  width: 100%; 
+  background-color: #ffffff; 
+  color: dodgerblue;
+  font-weight: bold; 
+  font-size: larger; 
+  position: relative;
+}
+
+
+
+.button--tamaya::before,
+.button--tamaya::after {
+  content: attr(data-text);
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  left: 0;
+  background: #7986cb;
+  color: #fff;
+  overflow: hidden;
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: transform 0.6s;
+  -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+
+.button--tamaya::before {
+  top: 0;
+  padding-top: 0.4em;
+}
+.button--tamaya::after {
+  bottom: 0;
+  line-height: 0;
+}
+.button--tamaya:hover::before {
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+}
+.button--tamaya:hover::after {
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+}
+
+
+.button--tamaya > span {
+  display: block;
+  -webkit-transform: scale3d(0.2, 0.2, 1);
+  transform: scale3d(0.2, 0.2, 1);
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.6s, opacity 0.6s;
+  transition: transform 0.6s, opacity 0.6s;
+  -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.button--tamaya:hover > span {
+  opacity: 1;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+}
+
+.button--border-thick {
+  border: 1px solid;
+  border-color: #37474f;
+}
+
+///////
+
+
